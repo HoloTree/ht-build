@@ -39,14 +39,14 @@
 		"wpackagist-plugin/pods"                                : "*",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
         "wpackagist-plugin/pods-alternative-cache"              : "*",
-        "wpackagist-plugin/debug-bar"                           : "*",
-        "wpackagist-plugin/debug-bar-console"                   : "*",
-        "wpackagist-plugin/simply-show-ids"                     : "*",
         "wpackagist-plugin/mobble"                              : "*"
 
 	},
 	"require-dev" : {
-		"wpackagist-plugin/log-deprecated-notices"    : "*"
+		"wpackagist-plugin/log-deprecated-notices"              : "*",
+        "wpackagist-plugin/debug-bar"                           : "*",
+        "wpackagist-plugin/debug-bar-console"                   : "*",
+        "wpackagist-plugin/simply-show-ids"                     : "*"
 	},
 	"extra"       : {
 		"wordpress-install-dir": "htdocs/",
