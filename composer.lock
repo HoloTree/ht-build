@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "4afb4d6b7191a5e742161229fc96bffe",
+    "hash": "f59a486183cae94498f6b9a738d5992c",
     "packages": [
         {
             "name": "composer/installers",
@@ -199,6 +199,30 @@
             "time": "2012-08-07 20:42:00"
         },
         {
+            "name": "wpackagist-plugin/mobble",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/mobble/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/mobble.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/mobble": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/mobble/",
+            "time": "2014-01-15 14:32:44"
+        },
+        {
             "name": "wpackagist-plugin/pods",
             "version": "dev-trunk",
             "source": {
@@ -269,6 +293,30 @@
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/pods-alternative-cache/",
             "time": "2014-06-13 09:47:32"
+        },
+        {
+            "name": "wpackagist-plugin/simply-show-ids",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/simply-show-ids/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/simply-show-ids.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/simply-show-ids": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/simply-show-ids/",
+            "time": "2010-06-26 02:40:54"
         }
     ],
     "packages-dev": [
