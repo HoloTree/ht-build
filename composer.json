@@ -15,18 +15,33 @@
 			"type": "composer",
 			"url" : "http://wpackagist.org"
 		},
-		{
-			"type": "composer",
-			"url" : "http://rarst.net"
-		}
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress/wordpress",
+                "version": "3.9.1",
+                "type": "webroot",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://wordpress.org/wordpress-3.9.1.zip"
+                },
+                "require" : {
+                    "fancyguy/webroot-installer": "1.1.0"
+                }
+            }
+        }
 	],
 	"config"      : {
 		"vendor-dir":  "vendor"
 	},
 	"require"     : {
-		"rarst/wordpress"                      : "3.7.x",
-		"wpackagist-plugin/advanced-custom-fields"    : "*",
-		"wpackagist-plugin/user-switching"            : "*"
+        "wordpress/wordpress"                                   : "3.9.1",
+		"wpackagist-plugin/pods"                                : "*",
+		"wpackagist-plugin/pods-ajax-views"                     : "*",
+        "wpackagist-plugin/pods-alternative-cache"              : "*",
+        "wpackagist-plugin/debug-bar"                           : "*",
+        "wpackagist-plugin/debug-bar-console"                   : "*"
+
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"    : "*"
@@ -34,8 +49,10 @@
 	"extra"       : {
 		"wordpress-install-dir": "htdocs/",
 		"installer-paths": {
-			"htdocs/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
-			"htdocs/wp-content/themes/{$name}/"  : ["type:wordpress-theme"]
-		}
+			"htdocs/ht/plugins/{$name}/" : ["type:wordpress-plugin"],
+			"htdocs/ht/themes/{$name}/"  : ["type:wordpress-theme"]
+		},
+        "webroot-dir": "htdocs/wp",
+        "webroot-package": "wordpress/wordpress"
 	}
 }

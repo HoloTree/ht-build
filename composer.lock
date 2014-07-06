@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "97a8b7babbf9b92a4a463cbd0da4d712",
+    "hash": "4afb4d6b7191a5e742161229fc96bffe",
     "packages": [
         {
             "name": "composer/installers",
@@ -95,80 +95,72 @@
             "time": "2014-06-27 16:11:39"
         },
         {
-            "name": "johnpbloch/wordpress-core-installer",
-            "version": "0.2.0",
+            "name": "fancyguy/webroot-installer",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e"
+                "url": "https://github.com/fancyguy/webroot-installer.git",
+                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a4c08e91be99e858c7778c2f52a4d73820147c2e",
-                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e",
+                "url": "https://api.github.com/repos/fancyguy/webroot-installer/zipball/a2d5c2e149d837e5580a62a91d3c91577aa30d28",
+                "reference": "a2d5c2e149d837e5580a62a91d3c91577aa30d28",
                 "shasum": ""
             },
-            "require": {
-                "composer-plugin-api": "1.0.0"
-            },
-            "conflict": {
-                "composer/installers": "<1.0.6"
-            },
             "require-dev": {
-                "composer/composer": "1.0.*@dev"
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
             },
-            "type": "composer-plugin",
+            "type": "composer-installer",
             "extra": {
-                "class": "johnpbloch\\Composer\\WordPressCorePlugin"
+                "class": "FancyGuy\\Composer\\WebrootInstaller"
             },
             "autoload": {
                 "psr-0": {
-                    "johnpbloch\\Composer\\": "src/"
+                    "FancyGuy\\Composer\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "John P. Bloch",
-                    "email": "me@johnpbloch.com"
+                    "name": "Steve Buzonas",
+                    "email": "steve@fancyguy.com",
+                    "homepage": "http://www.stevebuzonas.com"
                 }
             ],
-            "description": "A custom installer to handle deploying WordPress with composer",
-            "time": "2013-09-09 15:04:54"
+            "description": "A composer installer for libraries that live in an application webroot.",
+            "homepage": "http://fancyguy.github.com/webroot-installer/",
+            "time": "2013-03-15 17:51:14"
         },
         {
-            "name": "rarst/wordpress",
-            "version": "3.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WordPress/WordPress",
-                "reference": "3.7.1"
-            },
+            "name": "wordpress/wordpress",
+            "version": "3.9.1",
             "dist": {
                 "type": "zip",
-                "url": "http://wordpress.org/wordpress-3.7.1.zip",
+                "url": "https://wordpress.org/wordpress-3.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
-                "johnpbloch/wordpress-core-installer": "~0.1"
+                "fancyguy/webroot-installer": "1.1.0"
             },
-            "type": "wordpress-core"
+            "type": "webroot"
         },
         {
-            "name": "wpackagist-plugin/advanced-custom-fields",
+            "name": "wpackagist-plugin/debug-bar",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "url": "http://plugins.svn.wordpress.org/debug-bar/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "url": "http://downloads.wordpress.org/plugin/debug-bar.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -176,23 +168,23 @@
                 "composer/installers": "~1.0"
             },
             "replace": {
-                "wpackagist/advanced-custom-fields": "self.version"
+                "wpackagist/debug-bar": "self.version"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/advanced-custom-fields/",
-            "time": "2014-05-05 05:16:34"
+            "homepage": "http://wordpress.org/plugins/debug-bar/",
+            "time": "2013-05-15 13:06:43"
         },
         {
-            "name": "wpackagist-plugin/user-switching",
+            "name": "wpackagist-plugin/debug-bar-console",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/user-switching/",
+                "url": "http://plugins.svn.wordpress.org/debug-bar-console/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/user-switching.zip",
+                "url": "http://downloads.wordpress.org/plugin/debug-bar-console.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -200,11 +192,83 @@
                 "composer/installers": "~1.0"
             },
             "replace": {
-                "wpackagist/user-switching": "self.version"
+                "wpackagist/debug-bar-console": "self.version"
             },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/user-switching/",
-            "time": "2014-05-01 22:40:02"
+            "homepage": "http://wordpress.org/plugins/debug-bar-console/",
+            "time": "2012-08-07 20:42:00"
+        },
+        {
+            "name": "wpackagist-plugin/pods",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/pods/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/pods.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/pods": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/pods/",
+            "time": "2014-06-25 14:29:40"
+        },
+        {
+            "name": "wpackagist-plugin/pods-ajax-views",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/pods-ajax-views/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/pods-ajax-views.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/pods-ajax-views": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/pods-ajax-views/",
+            "time": "2014-06-20 03:48:25"
+        },
+        {
+            "name": "wpackagist-plugin/pods-alternative-cache",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/pods-alternative-cache/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/pods-alternative-cache.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/pods-alternative-cache": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/pods-alternative-cache/",
+            "time": "2014-06-13 09:47:32"
         }
     ],
     "packages-dev": [
