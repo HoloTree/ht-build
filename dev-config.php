@@ -15,14 +15,14 @@ define( 'DB_HOST',  'localhost');
  * Define URLs/ content directory
  */
 $root_dir = dirname(__DIR__);
-$webroot_dir = $root_dir . '/htdocs';
+$webroot_dir = $root_dir . '/ht-build/htdocs';
 define( 'WP_SITEURL', 'http://holotree.dev/wp' );
 define( 'WP_HOME', 'http://holotree.dev' );
 
 /**
  * Custom Content Directory
  */
-define( 'CONTENT_DIR', '/ht' );
+define( 'CONTENT_DIR', '/ht/' );
 define( 'WP_CONTENT_DIR', $webroot_dir . CONTENT_DIR );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . CONTENT_DIR );
 
