@@ -1,16 +1,90 @@
-# VVV Auto Bootstrap Demo 2
 
-This is one of a series of demonstrations of the auto-sitesetup designed to be used with [Varying Vagrants Vagrant](https://github.com/10up/varying-vagrant-vagrants/).
 
-This demo shows a site setup using Composer and some WP CLI commands; this one's for [Rarst](http://composer.rarst.net/).
+### Install
+1. Install Vagrant
 
-To get started:
+http://VagrantUp.com
 
-1. If you don't already have it, clone the [Vagrant repo](https://github.com/Varying-Vagrant-Vagrants/VVV/) , perhaps into your `~/Vagrants/` directory (you may need to create it if it doesn't already exist)
-2. Install the Vagrant hosts updater: `vagrant plugin install vagrant-hostsupdater`
-3. Clone this branch of this repo into the `www` directory of your Vagrant as `www/vvv-demo-2`
-4. If your Vagrant is running, from the Vagrant directory run `vagrant halt`
-5. Followed by `vagrant up --provision`.  Perhaps a cup of tea now? The provisioning may take a while.
+1. Install the [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
 
-Then you can visit [http://vvv-demo-2.dev/](http://vvv-demo-2.dev/)
+`vagrant plugin install vagrant-hostsupdater`
+
+1.Install the [vagrant-triggers](https://github.com/emyl/vagrant-triggers)
+
+`vagrant plugin install vagrant-triggers`
+
+1. Switch to user root
+
+`cd ~/`
+
+1. Clone [VVV] into ~/vagrant
+
+`git clone git://github.com/Varying-Vagrant-Vagrants/VVV.git vagrant`
+
+1. Optional: Vagrant Up To Test That You Have VVV Working
+
+
+`cd vagrant`
+
+`vagrant up`
+
+
+Go to http://vvv.dev and see links to default sites and utilities.
+
+1. Update vvv-hosts
+
+`cd www`
+
+Open vvv-hosts in text editor via GUI or `nano vvv-hosts`
+
+Add on new line:
+
+`holotree.dev`
+
+1. Clone this repo into ~/vagrant/www/ht-build
+
+
+`git clone git://github.com/Holo-Tree/ht-build.git`
+
+
+1. Change name of "make-htdocs" to "ht-docs"
+@TODO Figure out how to get those two files in there without messing up .gitignore
+
+`mv make-htdocs htdocs`
+
+1. Run composer to build
+
+`composer update`
+
+1. Re-provision vagrant
+
+`vagrant provision`
+
+Note: may require a `vagrant halt` and `vagrant up` to get new site to work after provisioning.
+
+1. Go to http://holotree.dev and install WordPress. Details are unimportant.
+
+1. Switch to plugin directory and clone HoloTree
+@TODO Do this in composer setup or vvv-init.sh or otherwise automate.
+
+`cd htdocs/ht/plugins`
+
+`git clone https://github.com/Holo-Tree/ht_dms.git ht_dms`
+
+`git clone https://github.com/Holo-Tree/holotree.git holotree`
+
+1. Switch to theme dir and install theme.
+@todo automate
+`cd ../`
+
+`cd themes`
+
+`git clone ??`
+
+@todo which theme?
+
+1. In WP admin activate plugins
+
+1. @TODO DATABASE
+
 
