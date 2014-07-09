@@ -1,4 +1,6 @@
-
+### Requires
+Git
+Composer (installed by vvv?)
 
 ### Install
 1. Install Vagrant
@@ -79,7 +81,7 @@ Note: may require a `vagrant halt` and `vagrant up` to get new site to work afte
 
 `cd themes`
 
-`git clone ??`
+`git clone https://github.com/Holo-Tree/ht_dms_theme.git`
 
 @todo which theme?
 
@@ -87,4 +89,19 @@ Note: may require a `vagrant halt` and `vagrant up` to get new site to work afte
 
 1. @TODO DATABASE
 
+### File Structure
 
+```
+├── composer.json
+├── dev-config.php -> WordPressConfiguration for VVV/dv usage only
+├── Gemfile
+├── vendor
+└── htdocs
+    ├── ht
+    │   ├── mu-plugins
+    │   ├── plugins
+    │   └── themes
+    ├── wp-config.php
+    ├── index.php
+    └── wp
+```
