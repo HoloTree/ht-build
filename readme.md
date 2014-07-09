@@ -105,3 +105,9 @@ Note: may require a `vagrant halt` and `vagrant up` to get new site to work afte
     ├── index.php
     └── wp
 ```
+
+### License, Sources, Thanks Etc.
+Copyright 2014 Josh Pollock.
+License: GPL v2 or later.
+
+This is based on: https://github.com/simonwheatley/vvv-demo-2 with inspiration and light copypasta from https://github.com/roots/bedrock (MIT License)
