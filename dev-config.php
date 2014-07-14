@@ -57,12 +57,12 @@ else {
 define( 'WP_DEBUG', true );
 define( "PODS_DEVELOPER", true );
 define( "PODS_GITHUB_UPDATE", true );
-define( 'PODS_ALT_CACHE_TYPE', 'db' );
+define( 'PODS_ALT_CACHE_TYPE', 'file' );
 
 /**
  * Much memory, very resource
  */
-define( 'WP_MAX_MEMORY_LIMIT', '512M' );
+define( 'WP_MAX_MEMORY_LIMIT', '-1' );
 
 
 /**
