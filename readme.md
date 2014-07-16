@@ -7,23 +7,23 @@ Composer (installed by vvv?)
 
 http://VagrantUp.com
 
-1. Install the [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
+2. Install the [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
 
 `vagrant plugin install vagrant-hostsupdater`
 
-1.Install the [vagrant-triggers](https://github.com/emyl/vagrant-triggers)
+3.Install the [vagrant-triggers](https://github.com/emyl/vagrant-triggers)
 
 `vagrant plugin install vagrant-triggers`
 
-1. Switch to user root
+4. Switch to user root
 
 `cd ~/`
 
-1. Clone [VVV] into ~/vagrant
+5. Clone [VVV] into ~/vagrant
 
 `git clone git://github.com/Varying-Vagrant-Vagrants/VVV.git vagrant`
 
-1. Optional: Vagrant Up To Test That You Have VVV Working
+6. Optional: Vagrant Up To Test That You Have VVV Working
 
 
 `cd vagrant`
@@ -33,7 +33,7 @@ http://VagrantUp.com
 
 Go to http://vvv.dev and see links to default sites and utilities.
 
-1. Update vvv-hosts
+7. Update vvv-hosts
 
 `cd www`
 
@@ -43,30 +43,34 @@ Add on new line:
 
 `holotree.dev`
 
-1. Clone this repo into ~/vagrant/www/ht-build
+8. Clone this repo into ~/vagrant/www/ht-build
 
 
-`git clone git://github.com/Holo-Tree/ht-build.git`
+`git clone git://github.com/Holo-Tree/ht-build.git ht-build`
 
 
-1. Change name of "make-htdocs" to "ht-docs"
+9. Change name of "make-htdocs" to "ht-docs"
 @TODO Figure out how to get those two files in there without messing up .gitignore
 
 `mv make-htdocs htdocs`
 
-1. Run composer to build
+10. Run composer to build
 
 `composer update`
 
-1. Re-provision vagrant
+or
+
+`php composer.phar update`
+
+11. Re-provision vagrant
 
 `vagrant provision`
 
 Note: may require a `vagrant halt` and `vagrant up` to get new site to work after provisioning.
 
-1. Go to http://holotree.dev and install WordPress. Details are unimportant.
+12. Go to http://holotree.dev and install WordPress. Details are unimportant.
 
-1. Switch to plugin directory and clone HoloTree
+13. Switch to plugin directory and clone HoloTree
 @TODO Do this in composer setup or vvv-init.sh or otherwise automate.
 
 `cd htdocs/ht/plugins`
@@ -75,19 +79,39 @@ Note: may require a `vagrant halt` and `vagrant up` to get new site to work afte
 
 `git clone https://github.com/Holo-Tree/holotree.git holotree`
 
-1. Switch to theme dir and install theme.
+`git clone https://github.com/HoloTree/gus-ui-mods.git gus-ui-mods`
+
+14. Switch to theme dir and install theme.
 @todo automate
 `cd ../`
 
 `cd themes`
 
-`git clone https://github.com/Holo-Tree/ht_dms_theme.git`
+`git clone https://github.com/Shelob9/app_starter.git`
 
-@todo which theme?
+15. Database
 
-1. In WP admin activate plugins
+If VVV didn't import the database, which it might have, go to [phpmyadmin](http://vvv.dev/database-admin/), drop any tables from htdev, and then import init.sql to that DB.
 
-1. @TODO DATABASE
+
+16. In WP admin activate plugins
+
+http://holotree.dev/wp/wp-admin/plugins.php
+
+Activate Plugins:
+* Pods
+* HoloTree
+* HoloTree DMS
+* Gus UI Mods
+* Debug Bar
+* Debug Bar Console
+* Simpley Show IDs
+* mobble
+
+Switch Theme To App_Starter:
+
+http://holotree.dev/wp/wp-admin/themes.php
+
 
 ### File Structure
 
