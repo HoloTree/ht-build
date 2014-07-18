@@ -68,26 +68,11 @@ or
 
 Note: may require a `vagrant halt` and `vagrant up` to get new site to work after provisioning.
 
-12. Go to http://holotree.dev and install WordPress. Details are unimportant.
+12. Go to http://holotree.dev and install WordPress. Details are unimportant. Might not be needed if VVV imported the database.
 
-13. Switch to plugin directory and clone HoloTree
-@TODO Do this in composer setup or vvv-init.sh or otherwise automate.
+13. Plugins (composer does this now)
 
-`cd htdocs/ht/plugins`
-
-`git clone https://github.com/Holo-Tree/ht_dms.git ht_dms`
-
-`git clone https://github.com/Holo-Tree/holotree.git holotree`
-
-`git clone https://github.com/HoloTree/gus-ui-mods.git gus-ui-mods`
-
-14. Switch to theme dir and install theme.
-@todo automate
-`cd ../`
-
-`cd themes`
-
-`git clone https://github.com/Shelob9/app_starter.git`
+14. Themes (composer does this now)
 
 15. Database
 

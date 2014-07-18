@@ -1,11 +1,11 @@
 {
-	"name"        : "simonwheatley/vvv-demo-2",
-	"description" : "VVV Auto Bootstrap Demo 2: WordPress stack via Composer",
+	"name"        : "holotree/ht-build",
+	"description" : "HoloTree build stack.",
 	"authors"     : [
 		{
-			"name"    : "Simon Wheatley",
-			"email"   : "simonw@codeforthepeople.com",
-			"homepage": "http://codeforthepeople.com/"
+			"name"    : "Josh Pollock",
+			"email"   : "Josh@JoshPress.net",
+			"homepage": "http://joshpress.net/"
 		}
 	],
 	"type"        : "project",
@@ -29,6 +29,22 @@
                     "fancyguy/webroot-installer": "1.1.0"
                 }
             }
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/HoloTree/holotree"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/HoloTree/ht-dms"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/HoloTree/gus-ui-mods"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/shelob9/app_starter"
         }
 	],
 	"config"      : {
@@ -39,8 +55,11 @@
 		"wpackagist-plugin/pods"                                : "*",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
         "wpackagist-plugin/pods-alternative-cache"              : "*",
-        "wpackagist-plugin/mobble"                              : "*"
-
+        "wpackagist-plugin/mobble"                              : "*",
+        "holotree/holotree"                                     : "*",
+        "holotree/ht_dms"                                       : "*",
+        "holotree/gus-ui-mods"                                  : "*",
+        "shelob9/app_starter"                                   : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
