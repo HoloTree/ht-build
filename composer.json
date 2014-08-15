@@ -16,27 +16,12 @@
 			"url" : "http://wpackagist.org"
 		},
         {
-            "type": "package",
-            "package": {
-                "name": "wordpress/wordpress",
-                "version": "3.9.1",
-                "type": "webroot",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://wordpress.org/wordpress-3.9.1.zip"
-                },
-                "require" : {
-                    "fancyguy/webroot-installer": "1.1.0"
-                }
-            }
-        },
-        {
             "type": "git",
             "url": "https://github.com/HoloTree/holotree"
         },
         {
             "type": "git",
-            "url": "https://github.com/HoloTree/ht-dms"
+            "url": "https://github.com/HoloTree/ht_dms"
         },
         {
             "type": "git",
@@ -45,30 +30,38 @@
         {
             "type": "git",
             "url": "https://github.com/shelob9/app_starter"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/pods-framework/pods-json-api"
         }
+
 	],
 	"config"      : {
 		"vendor-dir":  "vendor"
 	},
 	"require"     : {
-        "wordpress/wordpress"                                   : "3.9.1",
+        "johnpbloch/wordpress"                                  : "3.9.2",
 		"wpackagist-plugin/pods"                                : "*",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
         "wpackagist-plugin/pods-alternative-cache"              : "*",
         "wpackagist-plugin/mobble"                              : "*",
+        "wpackagist-plugin/json-rest-api"                       : "*",
         "holotree/holotree"                                     : "*",
         "holotree/ht_dms"                                       : "*",
-        "holotree/gus-ui-mods"                                  : "*",
-        "shelob9/app_starter"                                   : "*"
+        "holotree/gus_ui_mods"                                  : "*",
+        "shelob9/app_starter"                                   : "*",
+        "pods-framework/pods-json-api"                          : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
         "wpackagist-plugin/debug-bar"                           : "*",
         "wpackagist-plugin/debug-bar-console"                   : "*",
+        "wpackagist-plugin/user-switching"                      : "*",
         "wpackagist-plugin/simply-show-ids"                     : "*"
 	},
 	"extra"       : {
-		"wordpress-install-dir": "htdocs/",
+		"wordpress-install-dir": "htdocs/wp",
 		"installer-paths": {
 			"htdocs/ht/plugins/{$name}/" : ["type:wordpress-plugin"],
 			"htdocs/ht/themes/{$name}/"  : ["type:wordpress-theme"]
