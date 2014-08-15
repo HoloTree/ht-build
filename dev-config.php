@@ -37,7 +37,9 @@ $table_prefix = 'wp_';
  * Debug
  */
 //HoloTree Debug mode
-define( 'HT_DEV_MODE', true	);
+define( 'HT_DEV_MODE', true );
+define( 'HT_NEW_VIEW', false );
+define( 'HT_DEVICE', false );
 
 //General debug
 define( 'WP_DEBUG', true );
@@ -54,7 +56,6 @@ else {
 }
 
 //Pods debug
-define( 'WP_DEBUG', true );
 define( "PODS_DEVELOPER", true );
 define( "PODS_GITHUB_UPDATE", true );
 define( 'PODS_ALT_CACHE_TYPE', 'file' );
