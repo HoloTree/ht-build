@@ -1,6 +1,6 @@
 <?php
 define( 'WP_ROOT_DIR',  dirname( dirname( __FILE__ ) ) );
-define(  'WP_WEBROOT_DIR',  WP_ROOT_DIR . '/web' );
+define(  'WP_WEBROOT_DIR',  WP_ROOT_DIR . '/htdocs' );
 
 //define locations for configs
 $local_config = WP_ROOT_DIR . '/dev-config.php';
