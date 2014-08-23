@@ -1,3 +1,5 @@
 vendor
 htdocs
 htdocs/*
+production-config.php
+dev-config.php
