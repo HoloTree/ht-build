@@ -51,7 +51,8 @@
         "holotree/ht_dms"                                       : "*",
         "holotree/gus_ui_mods"                                  : "*",
         "shelob9/app_starter"                                   : "*",
-        "pods-framework/pods-json-api"                          : "*"
+        "pods-framework/pods-json-api"                          : "*",
+        "wpackagist-plugin/nginx-cache-optimizer"               : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
