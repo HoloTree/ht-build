@@ -61,12 +61,12 @@
         "wpackagist-plugin/simply-show-ids"                     : "*"
 	},
 	"extra"       : {
-		"wordpress-install-dir": "htdocs/wp",
+		"wordpress-install-dir": "public_html/wp",
 		"installer-paths": {
-			"htdocs/ht/plugins/{$name}/" : ["type:wordpress-plugin"],
-			"htdocs/ht/themes/{$name}/"  : ["type:wordpress-theme"]
+			"public_html/ht/plugins/{$name}/" : ["type:wordpress-plugin"],
+			"public_html/ht/themes/{$name}/"  : ["type:wordpress-theme"]
 		},
-        "webroot-dir": "htdocs/wp",
+        "webroot-dir": "public_html/wp",
         "webroot-package": "wordpress/wordpress"
 	}
 }

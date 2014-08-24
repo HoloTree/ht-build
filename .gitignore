@@ -1,5 +1,5 @@
 vendor
-htdocs
-htdocs/*
+public_html
+public_html/*
 production-config.php
 dev-config.php

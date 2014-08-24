@@ -49,10 +49,10 @@ Add on new line:
 `git clone git://github.com/Holo-Tree/ht-build.git ht-build`
 
 
-9. Change name of "make-htdocs" to "ht-docs"
+9. Change name of "make-public_html" to "ht-docs"
 @TODO Figure out how to get those two files in there without messing up .gitignore
 
-`mv make-htdocs htdocs`
+`mv make-public_html public_html`
 
 10. Run composer to build
 
@@ -105,7 +105,7 @@ http://holotree.dev/wp/wp-admin/themes.php
 ├── dev-config.php -> WordPressConfiguration for VVV/dv usage only
 ├── Gemfile
 ├── vendor
-└── htdocs
+└── public_html
     ├── ht
     │   ├── mu-plugins
     │   ├── plugins

@@ -1,2 +1,2 @@
 <?php
-include( dirname( __FILE__ ) ).'/htdocs/index.php';
+include( dirname( __FILE__ ) ).'/public_html/index.php';

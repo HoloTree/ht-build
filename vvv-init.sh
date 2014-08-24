@@ -11,7 +11,7 @@ mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON htdev.* TO wp@localhos
 composer install --prefer-dist
 
 # Download WordPress
-if [ ! -f htdocs/wp-config.php ]
+if [ ! -f public_html/wp-config.php ]
 then
 	echo "Creating wp-config.php and installing WordPress"
 	wp core config --dbname="htdev" --dbuser=wp --dbpass=wp --dbhost="localhost"
