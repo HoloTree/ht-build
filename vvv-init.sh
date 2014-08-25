@@ -10,13 +10,6 @@ mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON htdev.* TO wp@localhos
 # Run Composer
 composer install --prefer-dist
 
-# Download WordPress
-if [ ! -f public_html/wp-config.php ]
-then
-	echo "Creating wp-config.php and installing WordPress"
-	wp core config --dbname="htdev" --dbuser=wp --dbpass=wp --dbhost="localhost"
-	wp core install --url=holotree.dev --title="HoloTree" --admin_user=admin --admin_password=12345 --admin_email=demo@example.com
-fi
 
 # The Vagrant site setup script will restart Nginx for us
 
