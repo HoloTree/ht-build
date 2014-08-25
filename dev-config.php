@@ -20,7 +20,7 @@ define('LOGGED_IN_SALT', '12345' );
 define('NONCE_SALT', '12345' );
 
 //HoloTree Debug mode
-//define( 'HT_DEV_MODE', true );
+define( 'HT_DEV_MODE', true );
 define( 'HT_NEW_VIEW', false );
 define( 'HT_DEVICE', false );
 
