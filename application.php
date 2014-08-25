@@ -3,6 +3,10 @@ define( 'CONTENT_DIR', '/ht/' );
 define( 'WP_CONTENT_DIR', WP_WEBROOT_DIR . CONTENT_DIR );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . CONTENT_DIR );
 
+if ( ! defined(  'DB_HOST' ) ) {
+	define('DB_HOST', 'localhost');
+}
+
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 $table_prefix = 'wp_';
@@ -14,6 +18,7 @@ else {
 	define( 'WP_DEBUG_DISPLAY', false );
 }
 
+define( 'WP_DEBUG_LOG', true );
 
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
 

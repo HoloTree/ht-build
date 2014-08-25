@@ -23,5 +23,10 @@ else{
 	}
 }
 
-require_once( dirname( __FILE__ ). '/application.php' );
-require_once( ABSPATH . 'wp-settings.php');
+require_once( WP_WEBROOT_DIR. '/application.php' );
+if ( defined( 'ABSPATH' ) ) {
+	require_once( ABSPATH . 'wp-settings.php' );
+}
+else {
+	die( 'ABSPATH is not defined. You shall not WordPress.' );
+}
