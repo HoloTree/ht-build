@@ -34,6 +34,3 @@ define( 'SAVEQUERIES', true );
 //Pods debug
 define( "PODS_DEVELOPER", true );
 define( "PODS_GITHUB_UPDATE", true );
-
-define( 'WP_SITEURL', 'http://holotree.dev/wp' );
-define( 'WP_HOME', 'http://holotree.dev' );
