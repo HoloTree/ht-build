@@ -1,6 +1,8 @@
 vendor
-public_html
-public_html/*
+public_html/ht/plugins
+public_html/ht/themes
+public_html/ht/debug.log
+public_html/wp
 production-config.php
 dev-config.php
 composer.lock
