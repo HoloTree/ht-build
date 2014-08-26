@@ -1,5 +1,5 @@
 <?php
-define( 'CONTENT_DIR', '/ht/' );
+define( 'CONTENT_DIR', '/ht' );
 define( 'WP_CONTENT_DIR', WP_WEBROOT_DIR . CONTENT_DIR );
 define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . CONTENT_DIR );
 
@@ -28,7 +28,7 @@ if ( ! defined( 'WP_DEBUG_LOG') ) {
 }
 
 if ( ! defined ( 'WP_CACHE' ) ) {
-	//define( 'WP_CACHE', true );
+	define( 'WP_CACHE', true );
 }
 
 if ( file_exists( dirname( __FILE__ ) . '/memcached.php' ) ) {
