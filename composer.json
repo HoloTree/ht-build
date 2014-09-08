@@ -52,7 +52,10 @@
         "holotree/gus_ui_mods"                                  : "*",
         "shelob9/app_starter"                                   : "*",
         "pods-framework/pods-json-api"                          : "*",
-        "wpackagist-plugin/nginx-cache-optimizer"               : "*"
+        "wpackagist-plugin/nginx-cache-optimizer"               : "*",
+        "wpackagist-plugin/restricted-site-access"              : "*",
+        "wpackagist-plugin/remove-dashboard-access-for-non-admins" : "*",
+        "wpackagist-plugin/log-viewer"                          : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
