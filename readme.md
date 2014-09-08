@@ -41,7 +41,7 @@ Open vvv-hosts in text editor via GUI or `nano vvv-hosts`
 
 Add on new line:
 
-`holotree.dev`
+`gus.dev`
 
 8. Clone this repo into ~/vagrant/www/ht-build
 
@@ -49,12 +49,7 @@ Add on new line:
 `git clone git://github.com/Holo-Tree/ht-build.git ht-build`
 
 
-9. Change name of "make-public_html" to "ht-docs"
-@TODO Figure out how to get those two files in there without messing up .gitignore
-
-`mv make-public_html public_html`
-
-10. Run composer to build
+9. Run composer to build
 
 `composer update`
 
@@ -68,18 +63,8 @@ or
 
 Note: may require a `vagrant halt` and `vagrant up` to get new site to work after provisioning.
 
-12. Go to http://holotree.dev and install WordPress. Details are unimportant. Might not be needed if VVV imported the database.
 
-13. Plugins (composer does this now)
-
-14. Themes (composer does this now)
-
-15. Database
-
-If VVV didn't import the database, which it might have, go to [phpmyadmin](http://vvv.dev/database-admin/), drop any tables from htdev, and then import init.sql to that DB.
-
-
-16. In WP admin activate plugins
+12. In WP admin activate plugins
 
 http://holotree.dev/wp/wp-admin/plugins.php
 
