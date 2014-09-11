@@ -41,7 +41,7 @@
 		"vendor-dir":  "vendor"
 	},
 	"require"     : {
-        "johnpbloch/wordpress"                                  : "3.9.2",
+        "johnpbloch/wordpress"                                  : "4.0",
 		"wpackagist-plugin/pods"                                : "*",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
         "wpackagist-plugin/pods-alternative-cache"              : "*",
@@ -55,7 +55,8 @@
         "wpackagist-plugin/nginx-cache-optimizer"               : "*",
         "wpackagist-plugin/restricted-site-access"              : "*",
         "wpackagist-plugin/remove-dashboard-access-for-non-admins" : "*",
-        "wpackagist-plugin/log-viewer"                          : "*"
+        "wpackagist-plugin/log-viewer"                          : "*",
+        "wpackagist-plugin/caldera-forms"                       : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
