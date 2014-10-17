@@ -34,6 +34,10 @@
         {
             "type": "git",
             "url": "https://github.com/pods-framework/pods-json-api"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/pods-framework/pods-deploy"
         }
 
 	],
@@ -47,7 +51,7 @@
         "wpackagist-plugin/pods-alternative-cache"              : "*",
         "wpackagist-plugin/mobble"                              : "*",
         "wpackagist-plugin/json-rest-api"                       : "*",
-        "holotree/holotree"                                     : "*",
+        "pods-framework/pods-deploy"                            : "*",
         "holotree/ht_dms"                                       : "*",
         "holotree/gus_ui_mods"                                  : "*",
         "shelob9/app_starter"                                   : "*",
@@ -56,7 +60,10 @@
         "wpackagist-plugin/restricted-site-access"              : "*",
         "wpackagist-plugin/remove-dashboard-access-for-non-admins" : "*",
         "wpackagist-plugin/log-viewer"                          : "*",
-        "wpackagist-plugin/caldera-forms"                       : "*"
+        "wpackagist-plugin/caldera-forms"                       : "*",
+        "wpackagist-plugin/easy-digital-downloads"              : "*",
+        "components/handlebars.js"                              : "*",
+        "wpackagist/register-plus-redux"                        : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
