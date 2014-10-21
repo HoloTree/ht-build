@@ -17,10 +17,6 @@
 		},
         {
             "type": "git",
-            "url": "https://github.com/HoloTree/holotree"
-        },
-        {
-            "type": "git",
             "url": "https://github.com/HoloTree/ht_dms"
         },
         {
@@ -48,7 +44,6 @@
         "johnpbloch/wordpress"                                  : "4.0",
 		"wpackagist-plugin/pods"                                : "*",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
-        "wpackagist-plugin/pods-alternative-cache"              : "*",
         "wpackagist-plugin/mobble"                              : "*",
         "wpackagist-plugin/json-rest-api"                       : "*",
         "pods-framework/pods-deploy"                            : "*",
@@ -61,8 +56,6 @@
         "wpackagist-plugin/remove-dashboard-access-for-non-admins" : "*",
         "wpackagist-plugin/log-viewer"                          : "*",
         "wpackagist-plugin/caldera-forms"                       : "*",
-        "wpackagist-plugin/easy-digital-downloads"              : "*",
-        "components/handlebars.js"                              : "*",
         "wpackagist/register-plus-redux"                        : "*"
 	},
 	"require-dev" : {
