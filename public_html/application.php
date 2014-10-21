@@ -27,8 +27,8 @@ if ( ! defined( 'WP_DEBUG_LOG') ) {
 	define( 'WP_DEBUG_LOG', true );
 }
 
-if ( ! defined ( 'WP_CACHE' ) ) {
-	define( 'WP_CACHE', true );
+if ( ! defined ( 'WP_CACHE' ) && ! WP_LOCAL_DEV  ) {
+//	define( 'WP_CACHE', true );
 }
 
 if ( file_exists( dirname( __FILE__ ) . '/memcached.php' ) ) {
