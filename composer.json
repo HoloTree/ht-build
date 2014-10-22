@@ -34,6 +34,10 @@
         {
             "type": "git",
             "url": "https://github.com/pods-framework/pods-deploy"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/pods-framework/pods"
         }
 
 	],
@@ -42,7 +46,7 @@
 	},
 	"require"     : {
         "johnpbloch/wordpress"                                  : "4.0",
-		"wpackagist-plugin/pods"                                : "*",
+		"pods-framework/pods"                                : "*",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
         "wpackagist-plugin/mobble"                              : "*",
         "wpackagist-plugin/json-rest-api"                       : "*",
