@@ -23,10 +23,9 @@ define('NONCE_SALT', '12345' );
 define( 'HT_DEV_MODE', true );
 define( 'HT_NEW_VIEW', false );
 define( 'HT_DEVICE', false );
+define( 'HT_DMS_CONSENSUS_RESET_MODE', false );
 
 //General debug
-define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_LOG', true );
 define(	'FS_METHOD', 'direct');
 define( 'SAVEQUERIES', true );
 
@@ -34,4 +33,3 @@ define( 'SAVEQUERIES', true );
 //Pods debug
 define( "PODS_DEVELOPER", true );
 define( "PODS_GITHUB_UPDATE", true );
-
