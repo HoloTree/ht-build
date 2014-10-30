@@ -38,11 +38,29 @@
         {
             "type": "git",
             "url": "https://github.com/pods-framework/pods"
-        }
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/Shelob9/Caldera-Forms/"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "shelob9/caldera-forms",
+                "version": "1.1.9.1",
+                "dist": {
+                    "url": "https://github.com/Shelob9/Caldera-Forms/archive/use.zip",
+                    "type": "zip"
+                },
+                "require" : {
+                    "composer/installers" : "~1.0"
+                }
 
+            }
+        }
 	],
 	"config"      : {
-		"vendor-dir":  "vendor"
+		"vendor-dir":  "public_html/ht/mu-plugins/vendor/{$name}/"
 	},
 	"require"     : {
         "johnpbloch/wordpress"                                  : "4.0",
@@ -59,7 +77,7 @@
         "wpackagist-plugin/restricted-site-access"              : "*",
         "wpackagist-plugin/remove-dashboard-access-for-non-admins" : "*",
         "wpackagist-plugin/log-viewer"                          : "*",
-        "wpackagist-plugin/caldera-forms"                       : "*",
+        "shelob9/caldera-forms"                                : "1.1.9.1",
         "wpackagist/register-plus-redux"                        : "*"
 	},
 	"require-dev" : {

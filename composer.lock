@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "8e42cf81c93fa7b4d108811e3bf6f2de",
+    "hash": "7cee369b16e81e601a9a37a229f187ca",
     "packages": [
         {
             "name": "composer/installers",
@@ -84,7 +85,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HoloTree/gus-ui-mods",
-                "reference": "6b239684965fef5e8183d8f15683a48b66a5cb9a"
+                "reference": "d564ff9f84a7b4731e1f0f8fee149e603daf683c"
             },
             "require": {
                 "composer/installers": "v1.0.6",
@@ -113,47 +114,7 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2014-09-11 19:13:02"
-        },
-        {
-            "name": "holotree/holotree",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/HoloTree/holotree",
-                "reference": "7fcd53d4b85515a52b85b8b7191bc6f29b417031"
-            },
-            "require": {
-                "composer/installers": "v1.0.6",
-                "php": ">=5.4"
-            },
-            "type": "wordpress-plugin",
-            "extra": {
-                "installer-name": "holotree"
-            },
-            "license": [
-                "GPL v2+"
-            ],
-            "authors": [
-                {
-                    "name": "Josh Pollock",
-                    "email": "Josh@Joshpress.net",
-                    "homepage": "http://JoshPress.net",
-                    "role": "Lead Developer"
-                }
-            ],
-            "description": "HoloTree core.",
-            "homepage": "http://holotree.com/",
-            "keywords": [
-                "holotree",
-                "plugin",
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/holotree/holotree/issues",
-                "source": "https://github.com/holotree/holotree/"
-            },
-            "time": "2014-09-09 07:38:01"
+            "time": "2014-10-27 22:49:19"
         },
         {
             "name": "holotree/ht_dms",
@@ -161,11 +122,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/HoloTree/ht_dms",
-                "reference": "b600208d3b7924e53affad052b1d6e31d52a0da8"
+                "reference": "5b12e8f782ab96fefa3a7e93da47dc28ec4cbfc7"
             },
             "require": {
                 "composer/installers": "v1.0.6",
-                "holotree/holotree": "*",
                 "php": ">=5.4"
             },
             "type": "wordpress-plugin",
@@ -195,7 +155,7 @@
                 "issues": "https://github.com/holotree/ht_dms/issues",
                 "source": "https://github.com/holotree/ht_dms/"
             },
-            "time": "2014-09-05 16:53:20"
+            "time": "2014-10-30 23:27:06"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -280,12 +240,135 @@
             "time": "2013-09-09 15:04:54"
         },
         {
+            "name": "pods-framework/pods",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pods-framework/pods",
+                "reference": "7448ce69d6ddbcd73ef12dc6f1b3035fcdf9c742"
+            },
+            "require": {
+                "composer/installers": "~1.0.0",
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "pods"
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Kingsley Clark",
+                    "email": "scott@pods.io",
+                    "homepage": "http://scottkclark.com/",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Phil Lewis",
+                    "email": "phil@pods.io",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Josh Pollock",
+                    "email": "josh@pods.io",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dan Stefan Oprean",
+                    "role": "Developer"
+                },
+                {
+                    "name": "David Cramer",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mike Green",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jonathan Christopher",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Matt Gibbs",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Pods is a development framework for creating, extending, managing, and deploying customized content types in WordPress.",
+            "homepage": "http://pods.io/",
+            "keywords": [
+                "custom",
+                "fields",
+                "pods"
+            ],
+            "time": "2014-10-29 22:22:45"
+        },
+        {
+            "name": "pods-framework/pods-deploy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pods-framework/pods-deploy",
+                "reference": "894697b8a2170429e2fd9bb4878b9f7ef395bd79"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3",
+                "pods-framework/pods-json-api": ">=0.2.1",
+                "wpackagist-plugin/pods": ">=2.4.3"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Pollock",
+                    "email": "Josh@Pods.io",
+                    "homepage": "http://JoshPress.net",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "James Golovich",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Phil Lewis",
+                    "email": "Phil@Pods.io",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Pods Framework Team",
+                    "email": "contact@pods.io",
+                    "homepage": "http://pods.io/"
+                }
+            ],
+            "description": "Deploys Pods configuration to a remote site. Copies Pods setup, Pods Template, Pods Pages and Pods Helpers via the WordPress REST API.",
+            "homepage": "https://github.com/pods-framework/pods-deploy",
+            "keywords": [
+                "api",
+                "pods",
+                "wordpress",
+                "wp-api"
+            ],
+            "support": {
+                "issues": "https://github.com/pods-framework/pods-deploy/issues",
+                "source": "https://github.com/pods-framework/pods-deploy"
+            },
+            "time": "2014-10-21 00:27:31"
+        },
+        {
             "name": "pods-framework/pods-json-api",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pods-framework/pods-json-api",
-                "reference": "2ca558b00b7fc626f9346cb33ddef781a206abb2"
+                "reference": "718718b09ae65f4f0e81e4299d4164cb0ed46103"
             },
             "require": {
                 "composer/installers": "~1.0",
@@ -320,7 +403,7 @@
                 "issues": "https://github.com/pods-framework/pods-json-api/issues",
                 "source": "https://github.com/pods-framework/pods-json-api"
             },
-            "time": "2014-08-03 01:14:24"
+            "time": "2014-10-26 20:13:24"
         },
         {
             "name": "shelob9/app_starter",
@@ -361,28 +444,18 @@
             "time": "2014-08-26 07:01:14"
         },
         {
-            "name": "wpackagist-plugin/caldera-forms",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/caldera-forms/",
-                "reference": "trunk"
-            },
+            "name": "shelob9/caldera-forms",
+            "version": "1.1.9.1",
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/caldera-forms.zip",
+                "url": "https://github.com/Shelob9/Caldera-Forms/archive/use.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/caldera-forms": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/caldera-forms/",
-            "time": "2014-09-10 11:20:43"
+            "type": "library"
         },
         {
             "name": "wpackagist-plugin/json-rest-api",
@@ -478,7 +551,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/nginx-cache-optimizer/",
-            "time": "2014-08-21 09:01:14"
+            "time": "2014-09-08 06:56:11"
         },
         {
             "name": "wpackagist-plugin/pods",
@@ -502,7 +575,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/pods/",
-            "time": "2014-06-25 14:29:40"
+            "time": "2014-08-26 06:17:49"
         },
         {
             "name": "wpackagist-plugin/pods-ajax-views",
@@ -526,31 +599,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/pods-ajax-views/",
-            "time": "2014-06-20 03:48:25"
-        },
-        {
-            "name": "wpackagist-plugin/pods-alternative-cache",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/pods-alternative-cache/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/pods-alternative-cache.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "replace": {
-                "wpackagist/pods-alternative-cache": "self.version"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/pods-alternative-cache/",
-            "time": "2014-06-13 09:47:32"
+            "time": "2014-08-26 07:13:11"
         },
         {
             "name": "wpackagist-plugin/remove-dashboard-access-for-non-admins",
@@ -599,6 +648,27 @@
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/restricted-site-access/",
             "time": "2013-01-27 20:21:42"
+        },
+        {
+            "name": "wpackagist/register-plus-redux",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/register-plus-redux/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/register-plus-redux.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/register-plus-redux/",
+            "time": "2014-10-14 19:03:38"
         },
         {
             "name": "zurb/foundation",
@@ -656,7 +726,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/debug-bar/",
-            "time": "2013-05-15 13:06:43"
+            "time": "2014-09-02 05:19:55"
         },
         {
             "name": "wpackagist-plugin/debug-bar-console",
@@ -704,7 +774,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/log-deprecated-notices/",
-            "time": "2013-03-08 21:03:50"
+            "time": "2014-09-02 05:22:09"
         },
         {
             "name": "wpackagist-plugin/simply-show-ids",
@@ -752,20 +822,13 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/user-switching/",
-            "time": "2014-08-25 19:55:08"
+            "time": "2014-09-04 16:40:39"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "stability-flags": [],
+    "prefer-stable": false,
+    "platform": [],
+    "platform-dev": []
 }
