@@ -9,3 +9,4 @@ dev-config.php
 composer.lock
 public_html/ht/uploads
 components
+composer.json
