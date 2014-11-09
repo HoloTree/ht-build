@@ -64,7 +64,7 @@
 	},
 	"require"     : {
         "johnpbloch/wordpress"                                  : "4.0",
-		"pods-framework/pods"                                : "*",
+		"pods-framework/pods"                                : "2.x-dev",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
         "wpackagist-plugin/mobble"                              : "*",
         "wpackagist-plugin/json-rest-api"                       : "*",
