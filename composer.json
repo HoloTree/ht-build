@@ -75,7 +75,6 @@
         "pods-framework/pods-json-api"                          : "*",
         "wpackagist-plugin/nginx-cache-optimizer"               : "*",
         "wpackagist-plugin/restricted-site-access"              : "*",
-        "wpackagist-plugin/remove-dashboard-access-for-non-admins" : "*",
         "wpackagist-plugin/log-viewer"                          : "*",
         "shelob9/caldera-forms"                                : "1.1.9.1",
         "wpackagist/register-plus-redux"                        : "*"
