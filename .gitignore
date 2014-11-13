@@ -10,3 +10,4 @@ composer.lock
 public_html/ht/uploads
 components
 composer.json
+debug.log
