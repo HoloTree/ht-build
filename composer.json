@@ -76,7 +76,7 @@
         "wpackagist-plugin/nginx-cache-optimizer"               : "*",
         "wpackagist-plugin/restricted-site-access"              : "*",
         "wpackagist-plugin/log-viewer"                          : "*",
-        "shelob9/caldera-forms"                                : "1.1.9.1",
+        "wpackagist-plugin/caldera-forms"                       : "1.1.9.1",
         "wpackagist/register-plus-redux"                        : "*"
 	},
 	"require-dev" : {
