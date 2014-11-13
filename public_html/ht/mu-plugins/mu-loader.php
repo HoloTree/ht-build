@@ -5,8 +5,6 @@
 
 $vendor_dir = dirname( __FILE__ ) . '/vendor';
 
-require_once( $vendor_dir . '/shelob9/caldera-forms/caldera-core.php');
-
 /**
  * Path to vendor dir for project
  */
