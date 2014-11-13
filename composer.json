@@ -76,7 +76,8 @@
         "wpackagist-plugin/restricted-site-access"              : "*",
         "wpackagist-plugin/log-viewer"                          : "*",
         "wpackagist-plugin/caldera-forms"                       : "1.1.9.1",
-        "wpackagist/register-plus-redux"                        : "*"
+        "wpackagist/register-plus-redux"                        : "*",
+        "wpackagist-plugin/WP-CFM"                              : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
