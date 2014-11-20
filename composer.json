@@ -63,7 +63,7 @@
 		"vendor-dir":  "public_html/ht/mu-plugins/vendor/{$name}/"
 	},
 	"require"     : {
-        "johnpbloch/wordpress"                                  : "4.0",
+        "johnpbloch/wordpress"                                  : "4.0.1",
 		"pods-framework/pods"                                   : "2.x-dev",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
         "wpackagist-plugin/mobble"                              : "*",
