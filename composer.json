@@ -78,7 +78,8 @@
         "wpackagist-plugin/caldera-forms"                       : "1.1.9.1",
         "wpackagist/register-plus-redux"                        : "*",
         "wpackagist-plugin/WP-CFM"                              : "*",
-        "wpackagist-plugin/wpmandrill"                          : "*"
+        "wpackagist-plugin/wpmandrill"                          : "*",
+        "wpackagist-plugin/login-lockdown"                      : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
