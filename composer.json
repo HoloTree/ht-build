@@ -69,7 +69,7 @@
         "wpackagist-plugin/mobble"                              : "*",
         "wpackagist-plugin/json-rest-api"                       : "*",
         "pods-framework/pods-deploy"                            : "*",
-        "holotree/ht_dms"                                       : "0.1.1",
+        "holotree/ht_dms"                                       : "0.2.0",
         "holotree/gus_ui_mods"                                  : "0.1.1",
         "shelob9/app_starter"                                   : "*",
         "pods-framework/pods-json-api"                          : "*",
