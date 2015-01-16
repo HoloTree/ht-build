@@ -40,30 +40,19 @@
             "url": "https://github.com/pods-framework/pods"
         },
         {
-            "type": "git",
-            "url": "https://github.com/Shelob9/Caldera-Forms/"
+          "type" : "git",
+          "url"  : "https://github.com/Desertsnowman/Caldera-Forms"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "shelob9/caldera-forms",
-                "version": "1.1.9.1",
-                "dist": {
-                    "url": "https://github.com/Shelob9/Caldera-Forms/archive/use.zip",
-                    "type": "zip"
-                },
-                "require" : {
-                    "composer/installers" : "~1.0"
-                }
-
-            }
+          "type" : "git",
+          "url"  : "https://bitbucket.org/calderadev/cf-geo-autocomplete"
         }
 	],
 	"config"      : {
 		"vendor-dir":  "public_html/ht/mu-plugins/vendor/{$name}/"
 	},
 	"require"     : {
-        "johnpbloch/wordpress"                                  : "4.0.1",
+        "johnpbloch/wordpress"                                  : "4.1",
 		"pods-framework/pods"                                   : "2.x-dev",
 		"wpackagist-plugin/pods-ajax-views"                     : "*",
         "wpackagist-plugin/mobble"                              : "*",
@@ -75,11 +64,12 @@
         "pods-framework/pods-json-api"                          : "*",
         "wpackagist-plugin/restricted-site-access"              : "*",
         "wpackagist-plugin/log-viewer"                          : "*",
-        "wpackagist-plugin/caldera-forms"                       : "1.1.9.1",
         "wpackagist/register-plus-redux"                        : "*",
         "wpackagist-plugin/WP-CFM"                              : "*",
         "wpackagist-plugin/wpmandrill"                          : "*",
-        "wpackagist-plugin/login-lockdown"                      : "*"
+        "wpackagist-plugin/login-lockdown"                      : "*",
+        "Desertsnowman/caldera-forms"                           : "*",
+        "calderawp/cf-geo-autocomplete"                         : "*"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/log-deprecated-notices"              : "*",
